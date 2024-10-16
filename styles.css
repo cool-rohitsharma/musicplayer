@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+h2 {
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #0d0d3f;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    background-color: #141433;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.music-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-grid, .artists-grid, .stations-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.album, .artist {
+    text-align: center;
+}
+
+.album img, .artist img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+/* Queue */
+.queue {
+    position: fixed;
+    right: 0;
+    width: 250px;
+    background-color: #0d0d3f;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.queue ul {
+    list-style: none;
+    padding: 0;
+}
+
+.queue ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.queue .track-number {
+    margin-right: 10px;
+}
+
+.queue .track-name {
+    flex: 1;
+}
+
+/* Footer Player */
+.footer-player {
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    background-color: #1f1f5f;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-player .progress-bar {
+    width: 60%;
+    height: 5px;
+    background-color: #fff;
+}
+
+.player-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.player-controls button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
